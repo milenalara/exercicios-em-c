@@ -193,15 +193,15 @@ int ex04()
     printf("S = 1 - 1/3³ + 1/5³ - 1/7³ + 1/9³ - ...\n\n");
 
     int qtdTermos = 0;
-    float termo, denom = 1, resultado = 0;
+    float termo = 0, denom = 1, resultado = 0;
     printf("Informe a quantidade de termos:\n");
     scanf("%i", &qtdTermos);
 
-    for(; qtdTermos > 0; qtdTermos--)
+    for(int i = 1; i <= qtdTermos ; i++)
     {
         termo = 1 / pow(denom, 3);
 
-        if(qtdTermos % 2 == 0)
+        if(i % 2 == 0)
         {
             resultado -= termo;
         }
@@ -210,11 +210,6 @@ int ex04()
             resultado += termo;
         }
         denom += 2;
-    }
-
-    if (resultado < 0)
-    {
-        resultado *= -1;
     }
 
     printf("Resultado: %.6f", resultado);
@@ -227,10 +222,16 @@ int ex05()
 {
     printf("5 - A série de fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... Escreva um algoritmo que peça um número N maior que 2. Gere e imprima a série até este n-ésimo termo. \n");
 
-    int n1 = 0, n2 = 1, n = 1, num;
+    int n1 = 1, n2 = 1, n = 2, num;
 
     printf("Informe o número:\n");
     scanf("%i", &num);
+
+    if(num <= 2) {
+        printf("ERRO: informe um número MAIOR que 2");
+        return 0;
+    }
+
     printf("%i, %i", n1, n2);
 
     for(int i = n; i <= num; i += n1)
@@ -246,7 +247,25 @@ int ex05()
 
 int ex06()
 {
-    printf("6 - Fazer um algoritmo para calcular o valor de s, dado por, sendo o valor de N deverá se lido do teclado. S = +1/n - 2/(n-1) + 3/(n-2) - 4/(n-3) + ... n/1 \n");
+    printf("6 - Fazer um algoritmo para calcular o valor de S, dado por, sendo o valor de n deverá se lido do teclado. S = +1/n - 2/(n-1) + 3/(n-2) - 4/(n-3) + ... n/1 \n");
+
+    int num = 1, denom, sinal = 1;
+    float fracao = 0, soma = 0;
+
+    printf("Informe o valor de n:\n");
+    scanf("%i", &denom);
+
+    while (denom > 0)
+    {
+        fracao = num / denom;
+        fracao *= sinal;
+        soma += fracao;
+        num++;
+        denom--;
+        sinal *= -1;
+    }
+
+    printf("%.6f", soma);
 
     return 0;
 }
@@ -306,17 +325,17 @@ int ex09()
 {
     printf("9 - Faça um programa para um jogo de cara ou coroa. Neste caso, o jogador escolhe cara ou coroa (0 – cara e 1 – para coroa) mostre ao final de 10 tentativas, quantas foram certas e quantas erradas. (utilize o comando - para que o computador escolha o resultado).\n");
 
-    int aposta, resultado, countAcertos = 0, countErros = 0;
+    int aposta, resultado, acertos = 0, erros = 0;
 
     srand(time(NULL));
 
     for(int i = 1; i <= 10; i++)
     {
-        printf("\n>>> RODADA %i: digite 0 para \"cara\" ou 1 para \"coroa\"\n", i);
+        printf("\nRODADA %i: digite 0 para \"cara\" ou 1 para \"coroa\"\n", i);
 
         scanf("%i", &aposta);
 
-        resultado =  rand() / 20000;
+        resultado =  rand() % 2;
 
         if(aposta > 1 || aposta < 0)
         {
@@ -325,22 +344,26 @@ int ex09()
         }
         else
         {
+//            As linhas abaixo são para que o usuário nunca acerte mais do que 3 vezes!
+//            if (acertos > 2)
+//            {
+//                resultado != aposta;
+//            }
             if(aposta == resultado)
             {
-                countAcertos++;
+                acertos++;
             }
             else
             {
-                countErros++;
+                erros++;
             }
-
 
             printf("APOSTA: %i \t RESULTADO: %i --------> %s\n", aposta, resultado, aposta == resultado ? "acertou!" : "errou!");
 
         }
     }
 
-    printf("%d acertos\n%d erros\n", countAcertos, countErros);
+    printf("%d acertos\n%d erros\n", acertos, erros);
 
     return 0;
 }
