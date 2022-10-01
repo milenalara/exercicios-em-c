@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1662678507 source:d:\engenharia de software puc minas\2022-02\aeds1\lista01-c\2022-09-08-exercicio-fixacao\main.c
-	<stdio.h>
-	<stdlib.h>
-	<stdbool.h>
-	<locale.h>
-

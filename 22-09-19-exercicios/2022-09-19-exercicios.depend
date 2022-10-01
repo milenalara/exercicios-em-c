@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1663633684 source:d:\engenharia de software puc minas\2022-02\aeds1\lista01-c\2022-09-19-exercicios\main.c
-	<stdio.h>
-	<stdlib.h>
-	<math.h>
-	<locale.h>
-
