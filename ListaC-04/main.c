@@ -285,19 +285,71 @@ int exercise06()
 int exercise07()
 {
     printf("7 - Ler uma string de no máximo 50 caracteres e criar uma nova string com seu inverso, isto é a ultima letra da primeira string será a primeira na nova string e assim sucessivamente.\n");
+
+    char string[50], stringReversa[50];
+    int i, j = 0;
+
+    printf("Informe uma string de no máximo 50 caracteres:\n");
+    fflush(stdin);
+    gets(string);
+
+    for (i = strlen(string) - 1; i >= 0; i--)
+    {
+        stringReversa[j] = string[i];
+        j++;
+    }
+
+    stringReversa[j] = '\0'; // não entendi essa parte
+    printf("\n\tString original:\n%s\n", string);
+    printf("\tString reversa:\n%s\n", stringReversa);
+
     return 0;
 }
 
 int exercise08()
 {
-    printf("8 - Ler uma string de no máximo 50 caracteres e retire dessa string todos os espaços em branco.Utilize uma string auxiliar.\n");
+    printf("8 - Ler uma string de no máximo 50 caracteres e retire dessa string todos os espaços em branco. Utilize uma string auxiliar.\n");
+    char string[50], stringFinal[50];
+    int i;
+
+    printf("Informe uma string de no máximo 50 caracteres:\n");
+    fflush(stdin);
+    gets(string);
+
+    for (i = 0; i <= strlen(string); i++)
+    {
+        if (string[i] != ' ')
+        {
+            stringFinal[i] = string[i];
+        }
+    }
+    string[i] = '\0';
+
+    printf("%s", stringFinal);
 
     return 0;
 }
 
 int exercise09()
 {
-    printf("9 - Ler uma string de no máximo 50 caracteres e retire dessa string todos os espacos em branco.Sem utilize string auxiliar.\n");
+    printf("9 - Ler uma string de no máximo 50 caracteres e retire dessa string todos os espacos em branco. Sem utilizar string auxiliar.\n");
+
+    char string[50];
+    int i;
+
+    printf("Informe uma string de no máximo 50 caracteres:\n");
+    fflush(stdin);
+    gets(string);
+    printf("\n");
+
+    for (i = 0; i <= strlen(string); i++)
+    {
+        if (string[i] == ' ')
+        {
+            continue;
+        }
+        printf("%c", string[i]);
+    }
 
     return 0;
 }
