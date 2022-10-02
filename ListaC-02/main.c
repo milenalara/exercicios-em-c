@@ -208,17 +208,17 @@ int ex05()
     printf("Informe o terceiro número:\n");
     scanf("%i", &num3);
 
-    if (num1 > num3)
-    {
-        aux = num1;
-        num1 = num3;
-        num3 = aux;
-    }
     if (num1 > num2)
     {
         aux = num1;
         num1 = num2;
         num2 = aux;
+    }
+    if (num1 > num3)
+    {
+        aux = num1;
+        num1 = num3;
+        num3 = aux;
     }
     if (num2 > num3)
     {

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1664671542 source:d:\repos\exercicios-em-c\listac-02\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<math.h>
+	<string.h>
+

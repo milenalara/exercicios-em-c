@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="ListaC-04" />
+		<Option title="teste" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/ListaC-04" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/teste" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,21 +16,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/ListaC-04" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/teste" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-			<Target title="teste">
-				<Option output="bin/teste/ListaC-04" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="bin/teste/" />
-				<Option object_output="obj/teste/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -47,6 +34,8 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Extensions />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
