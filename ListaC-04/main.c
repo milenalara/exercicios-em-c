@@ -16,7 +16,6 @@ int exercise08();
 int exercise09();
 int exercise10();
 
-
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
@@ -25,32 +24,30 @@ int main()
     do
     {
         printf("\n============================================== BOAS VINDAS =============================================\n\n");
-        printf("Digite o cÃ³digo do programa que deseja executar\n");
-        printf("OU digite 0 para ver as opÃ§Ãµes de programas\n");
+        printf("Digite o código do programa que deseja executar\n");
+        printf("OU digite 0 para ver as opções de programas\n");
         printf("OU digite -1 para encerrar\n");
         scanf("%i", &op);
 
         chooseProgram(op);
 
-    }
-    while (op != -1);
+    } while (op != -1);
 
     return 0;
 }
 
-
 int options()
 {
-    printf("1 - Leia um conjunto indeterminado de palavras e ao final(estipule vocÃª um flag) informe qual foi a maior palavra e a menor palavra digitada, em tamanho e lexicograficamente.\n");
-    printf("2 â€“ Ler um string de no maÌximo 50 caracteres e contar quantas letras A essa palavra possui.\n");
-    printf("3 â€“ Ler uma string de no maÌximo 50 caracteres e indicar quais as posiÃ§Ãµes da letra A nessa palavra.\n");
-    printf("4 â€“ Ler uma string de no maÌximo 50 caracteres e em seguida um caractere, mostrar quais as posiÃ§Ãµes esse caractere aparece na string lida e quantas vezes ele apareceu.\n");
-    printf("5 - Ler uma string de no maÌximo 50 caracteres e em seguida um caractere(entre A e z - consista se o caracter esta nesse intervalo), mostrar quais as posiÃ§Ãµes esse caractere(maiÃºscula ou minÃºscula) na string lida e quantas vezes ele apareceu.\n");
-    printf("6 - Ler uma string de no maÌximo 50 caracteres e mostrar quantas letras possui e quantos caracteres sÃ£o nÃºmeros e quantos nÃ£o sÃ£o nem nÃºmeros nem letras.\n");
-    printf("7 â€“ Ler uma string de no maÌximo 50 caracteres e criar uma nova string com seu inverso, isso Ã© a ultima letra da primeira string seraÌ a primeira na nova string e assim sucessivamente.\n");
-    printf("8 â€“ Ler uma string de no maÌximo 50 caracteres e retire dessa string todos os espaÃ§os em branco.Utilize uma string auxiliar.\n");
-    printf("9 â€“ Ler uma string de no maÌximo 50 caracteres e retire dessa string todos os espaÃ§os em branco.Sem utilize string auxiliar.\n");
-    printf("10 - Ler uma string de no maÌximo 50 caracteres em seguida leia outra string de no maÌximo 3 caracteres, informe quantas vezes a segunda string aparece na primeira string, e diga as posiÃ§Ãµes iniciais em que ela aparece.\n");
+    printf("1 - Leia um conjunto indeterminado de palavras e ao final(estipule você um flag) informe qual foi a maior palavra e a menor palavra digitada, em tamanho e lexicograficamente.\n");
+    printf("2 – Ler um string de no máximo 50 caracteres e contar quantas letras A essa palavra possui.\n");
+    printf("3 – Ler uma string de no máximo 50 caracteres e indicar quais as posições da letra A nessa palavra.\n");
+    printf("4 – Ler uma string de no máximo 50 caracteres e em seguida um caractere, mostrar quais as posições esse caractere aparece na string lida e quantas vezes ele apareceu.\n");
+    printf("5 - Ler uma string de no máximo 50 caracteres e em seguida um caractere(entre A e z - consista se o caracter esta nesse intervalo), mostrar quais as posições esse caractere(maiúscula ou minúscula) na string lida e quantas vezes ele apareceu.\n");
+    printf("6 - Ler uma string de no máximo 50 caracteres e mostrar quantas letras possui e quantos caracteres são números e quantos não são nem números nem letras.\n");
+    printf("7 – Ler uma string de no máximo 50 caracteres e criar uma nova string com seu inverso, isso é a ultima letra da primeira string sera? a primeira na nova string e assim sucessivamente.\n");
+    printf("8 – Ler uma string de no máximo 50 caracteres e retire dessa string todos os espaços em branco.Utilize uma string auxiliar.\n");
+    printf("9 – Ler uma string de no máximo 50 caracteres e retire dessa string todos os espaços em branco.Sem utilize string auxiliar.\n");
+    printf("10 - Ler uma string de no máximo 50 caracteres em seguida leia outra string de no máximo 3 caracteres, informe quantas vezes a segunda string aparece na primeira string, e diga as posições iniciais em que ela aparece.\n");
 
     return 0;
 }
@@ -90,7 +87,7 @@ int chooseProgram(int op)
         exercise10();
         break;
     default:
-        printf("Programa nÃ£o encontrado");
+        printf("Programa não encontrado");
         break;
     }
 
@@ -99,7 +96,7 @@ int chooseProgram(int op)
 
 int exercise01()
 {
-    printf("1 - Leia um conjunto indeterminado de palavras e ao final(estipule vocÃª um flag) informe qual foi a maior palavra e a menor palavra digitada, em tamanho e lexicograficamente.\n");
+    printf("1 - Leia um conjunto indeterminado de palavras e ao final(estipule você um flag) informe qual foi a maior palavra e a menor palavra digitada, em tamanho e lexicograficamente.\n");
     char palavra[50], maiorLexi[50], maiorTam[50], menorLexi[50], menorTam[50];
 
     printf("digite uma palavra: ");
@@ -131,7 +128,7 @@ int exercise01()
         scanf("%s", palavra);
     }
 
-    printf("maior palavra lexicograficamente: %s\n", maiorLexi);
+    printf("\n\nmaior palavra lexicograficamente: %s\n", maiorLexi);
     printf("maior palavra em tamanho: %s\n", maiorTam);
     printf("menor palavra lexicograficamente: %s\n", menorLexi);
     printf("menor palavra em tamanho: %s\n", menorTam);
@@ -140,61 +137,113 @@ int exercise01()
 
 int exercise02()
 {
-    printf("2 â€“ Ler um string de no maÌximo 50 caracteres e contar quantas letras A essa palavra possui.\n");
+    printf("2 – Ler um string de no máximo 50 caracteres e contar quantas letras A essa palavra possui.\n");
+    char string[50];
+    int i, qte = 0;
+
+    printf("Informe uma string de no máximo 50 caracteres:\n");
+    fflush(stdin);
+    gets(string);
+    printf("string: %s\n", string);
+
+    for (i = 0; i < strlen(string); i++)
+    {
+        if (string[i] == 'A' || string[i] == 'a')
+        {
+            qte++;
+        }
+    }
+
+    printf("A string \"%s\" contém %i vezes a letra \'A\'.\n", string, qte);
 
     return 0;
 }
 
 int exercise03()
 {
-    printf("3 â€“ Ler uma string de no maÌximo 50 caracteres e indicar quais as posiÃ§Ãµes da letra A nessa palavra.\n");
+    printf("3 – Ler uma string de no máximo 50 caracteres e indicar quais as posições da letra A nessa palavra.\n");
+    int i;
+    char string[50];
+
+    printf("Informe uma string de no máximo 50 caracteres:\n");
+    fflush(stdin);
+    gets(string);
+
+    printf("Posições da letra A na string \"%s\":\n", string);
+
+    for (i = 0; i < strlen(string); i++)
+    {
+        if (string[i] == 'A' || string[i] == 'a')
+        {
+            printf("%i\n", i);
+        }
+    }
+
     return 0;
 }
 
 int exercise04()
 {
-    printf("4 â€“ Ler uma string de no maÌximo 50 caracteres e em seguida um caractere, mostrar quais as posiÃ§Ãµes esse caractere aparece na string lida e quantas vezes ele apareceu.\n");
+    printf("4 – Ler uma string de no máximo 50 caracteres e em seguida um caractere, mostrar quais as posições esse caractere aparece na string lida e quantas vezes ele apareceu.\n");
+
+    int i;
+    char string[50], caractere;
+
+    printf("Informe uma string de no máximo 50 caracteres:\n");
+    fflush(stdin);
+    gets(string);
+    printf("Informe um caractere:\n");
+    fflush(stdin);
+    scanf("%c", &caractere);
+
+    for (i = 0; i < strlen(string); i++)
+    {
+        if (string[i] == caractere)
+        {
+            printf("%i\n", i);
+        }
+    }
 
     return 0;
 }
 
 int exercise05()
 {
-    printf("5 - Ler uma string de no maÌximo 50 caracteres e em seguida um caractere(entre A e z - consista se o caracter esta nesse intervalo), mostrar quais as posiÃ§Ãµes esse caractere(maiÃºscula ou minÃºscula) na string lida e quantas vezes ele apareceu.\n");
+    printf("5 - Ler uma string de no máximo 50 caracteres e em seguida um caractere(entre A e z - consista se o caracter esta nesse intervalo), mostrar quais as posições esse caractere(maiúscula ou minúscula) na string lida e quantas vezes ele apareceu.\n");
 
     return 0;
 }
 
 int exercise06()
 {
-    printf("6 - Ler uma string de no maÌximo 50 caracteres e mostrar quantas letras possui e quantos caracteres sÃ£o nÃºmeros e quantos nÃ£o sÃ£o nem nÃºmeros nem letras.\n");
+    printf("6 - Ler uma string de no máximo 50 caracteres e mostrar quantas letras possui e quantos caracteres são números e quantos não são nem números nem letras.\n");
 
     return 0;
 }
 
 int exercise07()
 {
-    printf("7 â€“ Ler uma string de no maÌximo 50 caracteres e criar uma nova string com seu inverso, isso Ã© a ultima letra da primeira string seraÌ a primeira na nova string e assim sucessivamente.\n");
+    printf("7 – Ler uma string de no máximo 50 caracteres e criar uma nova string com seu inverso, isso é a ultima letra da primeira string sera? a primeira na nova string e assim sucessivamente.\n");
     return 0;
 }
 
 int exercise08()
 {
-    printf("8 â€“ Ler uma string de no maÌximo 50 caracteres e retire dessa string todos os espaÃ§os em branco.Utilize uma string auxiliar.\n");
+    printf("8 – Ler uma string de no máximo 50 caracteres e retire dessa string todos os espaços em branco.Utilize uma string auxiliar.\n");
 
     return 0;
 }
 
 int exercise09()
 {
-    printf("9 â€“ Ler uma string de no maÌximo 50 caracteres e retire dessa string todos os espaÃ§os em branco.Sem utilize string auxiliar.\n");
+    printf("9 – Ler uma string de no máximo 50 caracteres e retire dessa string todos os espaços em branco.Sem utilize string auxiliar.\n");
 
     return 0;
 }
 
 int exercise10()
 {
-    printf("10 - Ler uma string de no maÌximo 50 caracteres em seguida leia outra string de no maÌximo 3 caracteres, informe quantas vezes a segunda string aparece na primeira string, e diga as posiÃ§Ãµes iniciais em que ela aparece.\n");
+    printf("10 - Ler uma string de no máximo 50 caracteres em seguida leia outra string de no máximo 3 caracteres, informe quantas vezes a segunda string aparece na primeira string, e diga as posições iniciais em que ela aparece.\n");
 
     return 0;
 }

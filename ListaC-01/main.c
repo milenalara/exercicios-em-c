@@ -42,92 +42,92 @@ int main()
     printf("OU digite -1 para encerrar\n");
     scanf("%i", &op);
 
-    while(op != -1)
+    while (op != -1)
     {
         printf("========================================\n\n");
 
         switch (op)
         {
-            case 0:
-                options();
-                break;
-            case 1:
-                ex4a();
-                break;
-            case 2:
-                ex4b();
-                break;
-            case 3:
-                ex4c();
-                break;
-            case 4:
-                ex4d();
-                break;
-            case 5:
-                ex4e();
-                break;
-            case 6:
-                ex4f();
-                break;
-            case 7:
-                ex4g();
-                break;
-            case 8:
-                ex4h();
-                break;
-            case 9:
-                ex4i();
-                break;
-            case 10:
-                ex4j();
-                break;
-            case 11:
-                ex501();
-                break;
-            case 12:
-                ex502();
-                break;
-            case 13:
-                ex503();
-                break;
-            case 14:
-                ex504();
-                break;
-            case 15:
-                ex505();
-                break;
-            case 16:
-                ex506();
-                break;
-            case 17:
-                ex507();
-                break;
-            case 18:
-                ex508();
-                break;
-            case 19:
-                ex509();
-                break;
-            case 20:
-                ex510();
-                break;
-            case 21:
-                ex511();
-                break;
-            case 22:
-                ex512();
-                break;
-            case 23:
-                ex513();
-                break;
-            case 24:
-                ex514();
-                break;
-            case 25:
-                ex515();
-                break;
-            default:
-                printf("Programa n„o encontrado\n");
+        case 0:
+            options();
+            break;
+        case 1:
+            ex4a();
+            break;
+        case 2:
+            ex4b();
+            break;
+        case 3:
+            ex4c();
+            break;
+        case 4:
+            ex4d();
+            break;
+        case 5:
+            ex4e();
+            break;
+        case 6:
+            ex4f();
+            break;
+        case 7:
+            ex4g();
+            break;
+        case 8:
+            ex4h();
+            break;
+        case 9:
+            ex4i();
+            break;
+        case 10:
+            ex4j();
+            break;
+        case 11:
+            ex501();
+            break;
+        case 12:
+            ex502();
+            break;
+        case 13:
+            ex503();
+            break;
+        case 14:
+            ex504();
+            break;
+        case 15:
+            ex505();
+            break;
+        case 16:
+            ex506();
+            break;
+        case 17:
+            ex507();
+            break;
+        case 18:
+            ex508();
+            break;
+        case 19:
+            ex509();
+            break;
+        case 20:
+            ex510();
+            break;
+        case 21:
+            ex511();
+            break;
+        case 22:
+            ex512();
+            break;
+        case 23:
+            ex513();
+            break;
+        case 24:
+            ex514();
+            break;
+        case 25:
+            ex515();
+            break;
+        default:
+            printf("Programa nùo encontrado\n");
         }
 
         printf("\n========================================\n\n");
@@ -143,78 +143,78 @@ int main()
 int options()
 {
     printf("\n======================================== OP«’ES DE PROGRAMAS ========================================\n\n");
-    printf("1 - (ex. 4a) Leia um n˙mero e imprima seu sucessor.\n");
-    printf("2 - (ex. 4b) Calcule a mÈdia aritmÈtica de quatro n˙meros inteiros dados.\n");
-    printf("3 - (ex. 4c) FaÁa um algoritmo que receba 3 (trÍs) notas e seus respectivos pesos, calcule e mostre a mÈdia ponderada dessas notas.\n");
+    printf("1 - (ex. 4a) Leia um nùmero e imprima seu sucessor.\n");
+    printf("2 - (ex. 4b) Calcule a mùdia aritmùtica de quatro nùmeros inteiros dados.\n");
+    printf("3 - (ex. 4c) Faùa um algoritmo que receba 3 (trùs) notas e seus respectivos pesos, calcule e mostre a mùdia ponderada dessas notas.\n");
     printf("4 - (ex. 4d) Leia uma temperatura dada na escala Celsius (C) e imprima o equivalente em Fahrenheit (F). \n");
-    printf("5 - (ex. 4e) FaÁa um algoritmo que receba o sal·rio de um funcion·rio e o percentual de aumento, calcule e mostre o novo sal·rio.\n");
-    printf("6 - (ex. 4f) FaÁa um algoritmo que peÁa ao usu·rio a base e a altura e calcule a ·rea de um triangulo.\n");
-    printf("7 - (ex. 4g) Pedro comprou um saco de RaÁ„o com peso em quilos. Pedro possui 2 (dois) gatos para os quais fornece a quantidade de raÁ„o em gramas. FaÁa um algoritmo que receba o peso do Saco de raÁ„o e a quantidade de raÁ„o fornecida para cada gato. Calcule e mostre quanto restar· de raÁ„o no saco apÛs 5 (cinco) dias\n");
-    printf("8 - (ex. 4h) Ler dois n˙meros inteiros para vari·veis a e b. Trocar o valor de b com o de a, e imprimi-los.\n");
-    printf("9 - (ex. 4i) Leia um n˙mero e imprima o resto da divis„o por 7.\n");
-    printf("10 -(ex. 4j)  Calcular a soma dos termos de uma P.A. lendo os valores do primeiro termo, do segundo termo e do n˙mero de\n");
-    printf("11 - (ex. 5.01) Ler um valor inteiro do teclado e dizer se È par\n");
-    printf("12 - (ex. 5.02) Ler um valor inteiro do teclado e dizer se È Ìmpar\n");
-    printf("13 - (ex. 5.03) ler um valor inteiro do teclado e dizer se Ìmpar e maior que 100.\n");
-    printf("14 - (ex. 5.04) ler um valor inteiro do teclado e dizer se È par e menor que 100, ou Ìmpar e maior que 100.\n");
+    printf("5 - (ex. 4e) Faùa um algoritmo que receba o salùrio de um funcionùrio e o percentual de aumento, calcule e mostre o novo salùrio.\n");
+    printf("6 - (ex. 4f) Faùa um algoritmo que peùa ao usuùrio a base e a altura e calcule a ùrea de um triangulo.\n");
+    printf("7 - (ex. 4g) Pedro comprou um saco de Raùùo com peso em quilos. Pedro possui 2 (dois) gatos para os quais fornece a quantidade de raùùo em gramas. Faùa um algoritmo que receba o peso do Saco de raùùo e a quantidade de raùùo fornecida para cada gato. Calcule e mostre quanto restarù de raùùo no saco apùs 5 (cinco) dias\n");
+    printf("8 - (ex. 4h) Ler dois nùmeros inteiros para variùveis a e b. Trocar o valor de b com o de a, e imprimi-los.\n");
+    printf("9 - (ex. 4i) Leia um nùmero e imprima o resto da divisùo por 7.\n");
+    printf("10 -(ex. 4j)  Calcular a soma dos termos de uma P.A. lendo os valores do primeiro termo, do segundo termo e do nùmero de\n");
+    printf("11 - (ex. 5.01) Ler um valor inteiro do teclado e dizer se ù par\n");
+    printf("12 - (ex. 5.02) Ler um valor inteiro do teclado e dizer se ù ùmpar\n");
+    printf("13 - (ex. 5.03) ler um valor inteiro do teclado e dizer se ùmpar e maior que 100.\n");
+    printf("14 - (ex. 5.04) ler um valor inteiro do teclado e dizer se ù par e menor que 100, ou ùmpar e maior que 100.\n");
     printf("15 - (ex. 5.05) ler um valor inteiro do teclado e dizer se pertence ao intervalo aberto entre (25:75).\n");
     printf("16 - (ex. 5.06) ler um valor inteiro do teclado e dizer se pertence ao intervalo fechado entre [25:75].\n");
     printf("17 - (ex. 5.07) ler um valor inteiro do teclado e dizer se pertence aos intervalos fechados [15:45] ou [66:99]\n");
-    printf("18 - (ex. 5.08) ler dois valores inteiros do teclado e dizer se o primeiro È par e o segundo È Ìmpar.\n");
-    printf("19 - (ex. 5.09) ler dois valores inteiros do teclado e dizer se o primeiro È par e positivo, e o segundo È Ìmpar e negativo.\n");
-    printf("20 - (ex. 5.10) ler dois valores reais do teclado e dizer se o primeiro È maior, menor ou igual ao segundo.\n");
-    printf("21 - (ex. 5.11) ler trÍs valores reais do teclado e dizer se o primeiro est· entre os outros dois\n");
-    printf("22 - (ex. 5.12) ler trÍs valores reais do teclado e dizer se o primeiro n„o est· entre os outros dois\n");
-    printf("23 - (ex. 5.13) ler trÍs valores literais (caracteres) do teclado e dizer se o primeiro est· entre os outros dois\n");
-    printf("24 - (ex. 5.14) ler trÍs valores literais (caracteres) do teclado e dizer se est„o em ordem crescente lexicograficamente.\n");
-    printf("25 - (ex. 5.15) ler um valor literal (caractere) do teclado e dizer se È uma letra mai˙scula.\n");
+    printf("18 - (ex. 5.08) ler dois valores inteiros do teclado e dizer se o primeiro ù par e o segundo ù ùmpar.\n");
+    printf("19 - (ex. 5.09) ler dois valores inteiros do teclado e dizer se o primeiro ù par e positivo, e o segundo ù ùmpar e negativo.\n");
+    printf("20 - (ex. 5.10) ler dois valores reais do teclado e dizer se o primeiro ù maior, menor ou igual ao segundo.\n");
+    printf("21 - (ex. 5.11) ler trùs valores reais do teclado e dizer se o primeiro estù entre os outros dois\n");
+    printf("22 - (ex. 5.12) ler trùs valores reais do teclado e dizer se o primeiro nùo estù entre os outros dois\n");
+    printf("23 - (ex. 5.13) ler trùs valores literais (caracteres) do teclado e dizer se o primeiro estù entre os outros dois\n");
+    printf("24 - (ex. 5.14) ler trùs valores literais (caracteres) do teclado e dizer se estùo em ordem crescente lexicograficamente.\n");
+    printf("25 - (ex. 5.15) ler um valor literal (caractere) do teclado e dizer se ù uma letra maiùscula.\n");
 
     return 0;
 }
 
 int ex4a()
 {
-    printf("Leia um n˙mero e imprima seu sucessor.\n\n");
+    printf("Leia um nùmero e imprima seu sucessor.\n\n");
 
     int num, sucessor;
 
-    printf("Informe o n˙mero: \n");
+    printf("Informe o nùmero: \n");
     scanf("%d", &num);
     sucessor = num + 1;
-    printf("\nO sucessor de %i È %i.", num, sucessor);
+    printf("\nO sucessor de %i ù %i.", num, sucessor);
 
     return 0;
 }
 
 int ex4b()
 {
-    printf("Calcule a mÈdia aritmÈtica de quatro n˙meros inteiros dados.\n\n");
+    printf("Calcule a mùdia aritmùtica de quatro nùmeros inteiros dados.\n\n");
 
     int num1, num2, num3, num4;
     float media;
 
-    printf("Informe o primeiro n˙mero\n");
+    printf("Informe o primeiro nùmero\n");
     scanf("%d", &num1);
 
-    printf("Informe o segundo n˙mero\n");
+    printf("Informe o segundo nùmero\n");
     scanf("%d", &num2);
 
-    printf("Informe o terceiro n˙mero\n");
+    printf("Informe o terceiro nùmero\n");
     scanf("%d", &num3);
 
-    printf("Informe o quarto n˙mero\n");
+    printf("Informe o quarto nùmero\n");
     scanf("%d", &num4);
 
     media = (num1 + num2 + num3 + num4) / 4.0;
 
-    printf("\nA mÈdia dos n˙meros %d, %d, %d e %d È %.2f.", num1, num2, num3, num4, media);
+    printf("\nA mùdia dos nùmeros %d, %d, %d e %d ù %.2f.", num1, num2, num3, num4, media);
 
     return 0;
 }
 
 int ex4c()
 {
-    printf("FaÁa um algoritmo que receba 3 (trÍs) notas e seus respectivos pesos, calcule e mostre a mÈdia ponderada dessas notas.\n\n");
+    printf("Faùa um algoritmo que receba 3 (trùs) notas e seus respectivos pesos, calcule e mostre a mùdia ponderada dessas notas.\n\n");
 
     int peso1, peso2, peso3;
     float nota1, nota2, nota3, media;
@@ -231,9 +231,9 @@ int ex4c()
     scanf("%f", &nota3);
     scanf("%i", &peso3);
 
-    media = (nota1*peso1 + nota2*peso2 + nota3*peso3) / (peso1 + peso2 + peso3);
+    media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3);
 
-    printf("A mÈdia ponderada das notas È %.2f", media);
+    printf("A mùdia ponderada das notas ù %.2f", media);
 
     return 0;
 }
@@ -251,101 +251,100 @@ int ex4d()
 
     if (option == 1)
     {
-    printf("Informe a temperatura em ∫C:\n");
-    scanf("%f", &tempC);
+        printf("Informe a temperatura em ùC:\n");
+        scanf("%f", &tempC);
 
-    tempF = 9.0/5.0 * tempC + 32;
+        tempF = 9.0 / 5.0 * tempC + 32;
 
-    printf("%.2f ∫C equivale a %.2f ∫F", tempC, tempF);
+        printf("%.2f ùC equivale a %.2f ùF", tempC, tempF);
     }
     else
     {
-        if(option == 2)
+        if (option == 2)
         {
-            printf("Informe a temperatura em ∫F:\n");
+            printf("Informe a temperatura em ùF:\n");
             scanf("%f", &tempF);
 
             tempC = (tempF - 32) * 5 / 9;
 
-            printf("%.2f ∫F equivale a %.2f ∫C", tempF, tempC);
+            printf("%.2f ùF equivale a %.2f ùC", tempF, tempC);
         }
     }
-
 
     return 0;
 }
 
 int ex4e()
 {
-    printf("FaÁa um algoritmo que receba o sal·rio de um funcion·rio e o percentual de aumento, calcule e mostre o novo sal·rio.\n\n");
+    printf("Faùa um algoritmo que receba o salùrio de um funcionùrio e o percentual de aumento, calcule e mostre o novo salùrio.\n\n");
     float salarioInicial, salarioFinal, aumento;
 
-    printf("Informe o sal·rio atual\n");
+    printf("Informe o salùrio atual\n");
     scanf("%f", &salarioInicial);
 
     printf("Informe o percentual de aumento\n");
     scanf("%f", &aumento);
     aumento = aumento / 100;
 
-    salarioFinal = salarioInicial * (1+ aumento);
+    salarioFinal = salarioInicial * (1 + aumento);
 
-    printf("O sal·rio final ser· R$%.2f", salarioFinal);
+    printf("O salùrio final serù R$%.2f", salarioFinal);
 
     return 0;
 }
 
 int ex4f()
 {
-    printf("FaÁa um algoritmo que peÁa ao usu·rio a base e a altura e calcule a ·rea de um triangulo.\n\n");
+    printf("Faùa um algoritmo que peùa ao usuùrio a base e a altura e calcule a ùrea de um triangulo.\n\n");
     float base, altura, area;
 
-    printf("Informe a base do tri‚ngulo:\n");
+    printf("Informe a base do triùngulo:\n");
     scanf("%f", &base);
 
-    printf("Informe a altura do tri‚ngulo:\n");
+    printf("Informe a altura do triùngulo:\n");
     scanf("%f", &altura);
 
     area = base * altura / 2;
 
-    printf("A ·rea do tri‚ngulo È igual a %.2f\n", area);
+    printf("A ùrea do triùngulo ù igual a %.2f\n", area);
 
     return 0;
 }
 
 int ex4g()
 {
-    printf("Pedro comprou um saco de RaÁ„o com peso em quilos. Pedro possui 2 (dois) gatos para os quais fornece a quantidade de raÁ„o em gramas.\n");
-    printf("FaÁa um algoritmo que receba o peso do Saco de raÁ„o e a quantidade de raÁ„o fornecida para cada gato.\n");
-    printf("Calcule e mostre quanto restar· de raÁ„o no saco apÛs 5 (cinco) dias.\n\n");
+    printf("Pedro comprou um saco de Raùùo com peso em quilos. Pedro possui 2 (dois) gatos para os quais fornece a quantidade de raùùo em gramas.\n");
+    printf("Faùa um algoritmo que receba o peso do Saco de raùùo e a quantidade de raùùo fornecida para cada gato.\n");
+    printf("Calcule e mostre quanto restarù de raùùo no saco apùs 5 (cinco) dias.\n\n");
 
     float pesoSaco, qtdFornecida, qtdConsumida, qtdRestante;
 
-    printf("Informe o peso do saco de raÁ„o em quilos:\n");
+    printf("Informe o peso do saco de raùùo em quilos:\n");
     scanf("%f", &pesoSaco);
 
-    printf("informe a quantidade de raÁ„o fornecida para cada gato em gramas:\n");
+    printf("informe a quantidade de raùùo fornecida para cada gato em gramas:\n");
     scanf("%f", &qtdFornecida);
 
-    qtdConsumida = qtdFornecida * 2 * 5;    // 2 gatos, 5 dias
+    qtdConsumida = qtdFornecida * 2 * 5; // 2 gatos, 5 dias
 
     qtdRestante = (pesoSaco * 1000) - qtdConsumida;
     qtdRestante = qtdRestante / 1000; // converter de g para kg
 
-    printf("A quantidade de raÁ„o restante no saco apÛs 5 dias È %.2f kg", qtdRestante);
+    printf("A quantidade de raùùo restante no saco apùs 5 dias ù %.2f kg", qtdRestante);
 
     return 0;
 }
 
 int ex4h()
 {
-    printf("Ler dois n˙meros inteiros para vari·veis a e b. Trocar o valor de b com o de a, e imprimi-los\n\n");
+    printf("Ler dois nùmeros inteiros para variùveis a e b. Trocar o valor de b com o de a, e imprimi-los\n\n");
 
     int a, b, aux;
 
-    printf("Informe o primeiro n˙mero inteiro.\na = ");
+    printf("Informe o primeiro nùmero inteiro.\na = ");
     scanf("%d", &a);
 
-    printf("Informe o segundo n˙mero inteiro.\nb = ");
+    printf("Informe o segundo nùmero inteiro.\nb = ");
     scanf("%d", &b);
 
     aux = a;
@@ -359,23 +358,23 @@ int ex4h()
 
 int ex4i()
 {
-    printf("Leia um n˙mero e imprima o resto da divis„o por 7.\n\n");
+    printf("Leia um nùmero e imprima o resto da divisùo por 7.\n\n");
 
     int num, resto;
 
-    printf("ForneÁa um n˙mero inteiro:\n");
+    printf("Forneùa um nùmero inteiro:\n");
     scanf("%d", &num);
 
     resto = num % 7;
 
-    printf("O resto da divis„o de %d por 7 È %d.\n", num, resto);
+    printf("O resto da divisùo de %d por 7 ù %d.\n", num, resto);
 
     return 0;
 }
 
 int ex4j()
 {
-    printf("Calcular a soma dos termos de uma P.A. lendo os valores do primeiro termo, do segundo termo e do n˙mero de termos.\n\n");
+    printf("Calcular a soma dos termos de uma P.A. lendo os valores do primeiro termo, do segundo termo e do nùmero de termos.\n\n");
 
     int termo1, termo2, termoN, qtdTermos, razao;
     float soma;
@@ -386,95 +385,94 @@ int ex4j()
     printf("Informe o segundo termo da P.A.:\n");
     scanf("%d", &termo2);
 
-    printf("Informe o n˙mero de termos da P.A.:\n");
+    printf("Informe o nùmero de termos da P.A.:\n");
     scanf("%d", &qtdTermos);
 
     razao = termo2 - termo1;
 
-    termoN = termo1 + (qtdTermos -1)*razao;
+    termoN = termo1 + (qtdTermos - 1) * razao;
 
-    soma = qtdTermos * (termo1 + termoN)/2.0;
+    soma = qtdTermos * (termo1 + termoN) / 2.0;
 
-    printf("O valor da soma dos termos da P.A. È %.1f.", soma);
+    printf("O valor da soma dos termos da P.A. ù %.1f.", soma);
 
     return 0;
 }
 
 int ex501()
 {
-    printf("Ler um valor inteiro do teclado e dizer se È par\n");
+    printf("Ler um valor inteiro do teclado e dizer se ù par\n");
     printf("OBS: 0 = false; 1 = true\n\n");
 
     int ehPar, num;
 
-    printf("Informe um n˙mero:\n");
+    printf("Informe um nùmero:\n");
     scanf("%i", &num);
 
     ehPar = (num % 2 == 0);
 
-    printf("%i È par? -> RE: %i\n", num, ehPar);
+    printf("%i ù par? -> RE: %i\n", num, ehPar);
 
     return 0;
 }
 
 int ex502()
 {
-    printf("Ler um valor inteiro do teclado e dizer se È Ìmpar\n");
+    printf("Ler um valor inteiro do teclado e dizer se ù ùmpar\n");
     printf("OBS: 0 = false; 1 = true\n\n");
-
 
     int ehImpar, num;
 
-    printf("Informe um n˙mero:\n");
+    printf("Informe um nùmero:\n");
     scanf("%i", &num);
 
     ehImpar = !(num % 2 == 0);
 
-    printf("%i È Ìmpar? -> %i", num, ehImpar);
+    printf("%i ù ùmpar? -> %i", num, ehImpar);
     return 0;
 }
 
 int ex503()
 {
-    printf("Ler um valor inteiro do teclado e dizer se È Ìmpar e maior que 100\n");
+    printf("Ler um valor inteiro do teclado e dizer se ù ùmpar e maior que 100\n");
     printf("OBS: 0 = false; 1 = true\n\n");
 
     int ehImpar, ehMaiorQue100, num;
 
-    printf("Informe um n˙mero:\n");
+    printf("Informe um nùmero:\n");
     scanf("%i", &num);
 
     ehImpar = !(num % 2 == 0);
     ehMaiorQue100 = ehImpar && (num > 100);
 
-    printf("%i È Ìmpar e maior que 100? -> %i", num, ehMaiorQue100);
+    printf("%i ù ùmpar e maior que 100? -> %i", num, ehMaiorQue100);
 
     return 0;
 }
 
 int ex504()
 {
-    printf("Ler um valor inteiro do teclado e dizer se È par e menor que 100, ou Ìmpar e maior que 100\n");
+    printf("Ler um valor inteiro do teclado e dizer se ù par e menor que 100, ou ùmpar e maior que 100\n");
     printf("OBS: 0 = false; 1 = true\n\n");
 
     int num;
 
-    printf("Informe um n˙mero:\n");
+    printf("Informe um nùmero:\n");
     scanf("%i", &num);
 
     if ((num % 2 == 0) && (num < 100))
     {
-        printf("%i È par e menor que 100.", num);
+        printf("%i ù par e menor que 100.", num);
     }
     else
     {
         if (!(num % 2 == 0) && (num > 100))
         {
-            printf("%i È Ìmpar e maior que 100.", num);
+            printf("%i ù ùmpar e maior que 100.", num);
         }
         else
         {
-            printf("%i n„o È par e menor que 100 nem Ìmpar e maior que 100.\n", num);
+            printf("%i nùo ù par e menor que 100 nem ùmpar e maior que 100.\n", num);
         }
     }
 
@@ -487,7 +485,7 @@ int ex505()
 
     int num;
 
-    printf("Informe um n˙mero inteiro:\n");
+    printf("Informe um nùmero inteiro:\n");
     scanf("%i", &num);
 
     if (num > 25 && num < 75)
@@ -496,7 +494,7 @@ int ex505()
     }
     else
     {
-        printf("%i n„o pertence ao intervalo aberto entre ]25:75[", num);
+        printf("%i nùo pertence ao intervalo aberto entre ]25:75[", num);
     }
     return 0;
 }
@@ -507,7 +505,7 @@ int ex506()
 
     int num;
 
-    printf("Informe um n˙mero inteiro:\n");
+    printf("Informe um nùmero inteiro:\n");
     scanf("%i", &num);
 
     if (num >= 25 && num <= 75)
@@ -516,7 +514,7 @@ int ex506()
     }
     else
     {
-        printf("%i n„o pertence ao intervalo fechado entre [25:75]", num);
+        printf("%i nùo pertence ao intervalo fechado entre [25:75]", num);
     }
 
     return 0;
@@ -528,7 +526,7 @@ int ex507()
 
     int num;
 
-    printf("Informe um n˙mero inteiro:\n");
+    printf("Informe um nùmero inteiro:\n");
     scanf("%i", &num);
 
     if (num >= 15 && num <= 45)
@@ -543,7 +541,7 @@ int ex507()
         }
         else
         {
-            printf("%i n„o pertence nem ao intervalo fechado entre [15:45] nem ao intervalo fechado entre [66:99]", num);
+            printf("%i nùo pertence nem ao intervalo fechado entre [15:45] nem ao intervalo fechado entre [66:99]", num);
         }
     }
 
@@ -552,62 +550,65 @@ int ex507()
 
 int ex508()
 {
-    printf("Ler dois valores inteiros do teclado e dizer se o primeiro È par e o segundo È Ìmpar.\n\n");
+    printf("Ler dois valores inteiros do teclado e dizer se o primeiro ù par e o segundo ù ùmpar.\n\n");
     int num1, num2;
 
-    printf("Informe o primeiro n˙mero:\n");
+    printf("Informe o primeiro nùmero:\n");
     scanf("%i", &num1);
-    printf("Informe o segundo n˙mero:\n");
+    printf("Informe o segundo nùmero:\n");
     scanf("%i", &num2);
 
-//     char trueOrFalse[] = (num1 % 2 == 0) ? "verdadeiro" : "falso";
-//     printf("%i È par? %c", num1, trueOrFalse);
-//     error message: error: invalid initializer
+    //     char trueOrFalse[] = (num1 % 2 == 0) ? "verdadeiro" : "falso";
+    //     printf("%i ù par? %c", num1, trueOrFalse);
+    //     error message: error: invalid initializer
 
     printf("\nOBS: 0 = false, 1 = true\n\n");
-    printf("%i È par? -> %i\n", num1, num1 % 2 == 0);
-    printf("%i È Ìmpar? -> %i\n", num2, !(num2 % 2 == 0));
+    printf("%i ù par? -> %i\n", num1, num1 % 2 == 0);
+    printf("%i ù ùmpar? -> %i\n", num2, !(num2 % 2 == 0));
 
     return 0;
 }
 
 int ex509()
 {
-    printf("Ler dois valores inteiros do teclado e dizer se o primeiro È par e positivo, e o segundo È Ìmpar e negativo.\n\n");
+    printf("Ler dois valores inteiros do teclado e dizer se o primeiro ù par e positivo, e o segundo ù ùmpar e negativo.\n\n");
     int num1, num2;
 
-    printf("Informe o primeiro n˙mero:\n");
+    printf("Informe o primeiro nùmero:\n");
     scanf("%i", &num1);
-    printf("Informe o segundo n˙mero:\n");
+    printf("Informe o segundo nùmero:\n");
     scanf("%i", &num2);
 
     printf("\nOBS: 0 = false, 1 = true\n\n");
-    printf("%i È par e positivo? -> %i\n", num1, num1 % 2 == 0 && num1 > 0);
-    printf("%i È Ìmpar e negativo? -> %i\n", num2, !(num2 % 2 == 0) && num2 < 0);
+    printf("%i ù par e positivo? -> %i\n", num1, num1 % 2 == 0 && num1 > 0);
+    printf("%i ù ùmpar e negativo? -> %i\n", num2, !(num2 % 2 == 0) && num2 < 0);
 
     return 0;
 }
 
 int ex510()
 {
-    printf("Ler dois valores reais do teclado e dizer se o primeiro È maior, menor ou igual ao segundo.\n\n");
+    printf("Ler dois valores reais do teclado e dizer se o primeiro ù maior, menor ou igual ao segundo.\n\n");
     int num1, num2;
 
-    printf("Informe o primeiro n˙mero:\n");
+    printf("Informe o primeiro nùmero:\n");
     scanf("%i", &num1);
-    printf("Informe o segundo n˙mero:\n");
+    printf("Informe o segundo nùmero:\n");
     scanf("%i", &num2);
 
-    if (num1>num2) {
-        printf("%i È maior que %i.", num1, num2);
+    if (num1 > num2)
+    {
+        printf("%i ù maior que %i.", num1, num2);
     }
     else
     {
-        if(num1<num2) {
-            printf("%i È menor que %i.", num1, num2);
+        if (num1 < num2)
+        {
+            printf("%i ù menor que %i.", num1, num2);
         }
-        else {
-            printf("%i e %i s„o iguais.", num1, num2);
+        else
+        {
+            printf("%i e %i sùo iguais.", num1, num2);
         }
     }
 
@@ -616,23 +617,23 @@ int ex510()
 
 int ex511()
 {
-    printf("Ler trÍs valores reais do teclado e dizer se o primeiro est· entre os outros dois\n\n");
+    printf("Ler trùs valores reais do teclado e dizer se o primeiro estù entre os outros dois\n\n");
     int num1, num2, num3;
 
-    printf("Informe o primeiro n˙mero:\n");
+    printf("Informe o primeiro nùmero:\n");
     scanf("%i", &num1);
-    printf("Informe o segundo n˙mero:\n");
+    printf("Informe o segundo nùmero:\n");
     scanf("%i", &num2);
-    printf("Informe o terceiro n˙mero:\n");
+    printf("Informe o terceiro nùmero:\n");
     scanf("%i", &num3);
 
-    if(num2<num3)
+    if (num2 < num3)
     {
-        printf("%i est· entre %i e %i? -> ", num1, num2, num3);
+        printf("%i estù entre %i e %i? -> ", num1, num2, num3);
     }
-    else {
-        printf("%i est· entre %i e %i? -> ", num1, num3, num2);
-
+    else
+    {
+        printf("%i estù entre %i e %i? -> ", num1, num3, num2);
     }
 
     if ((num1 > num2 && num1 < num3) || (num1 > num3 && num1 < num2))
@@ -641,7 +642,7 @@ int ex511()
     }
     else
     {
-        printf("N„o");
+        printf("Nùo");
     }
 
     return 0;
@@ -649,23 +650,23 @@ int ex511()
 
 int ex512()
 {
-    printf("Ler trÍs valores reais do teclado e dizer se o primeiro N√O est· entre os outros dois\n\n");
+    printf("Ler trùs valores reais do teclado e dizer se o primeiro NùO estù entre os outros dois\n\n");
     int num1, num2, num3;
 
-    printf("Informe o primeiro n˙mero:\n");
+    printf("Informe o primeiro nùmero:\n");
     scanf("%i", &num1);
-    printf("Informe o segundo n˙mero:\n");
+    printf("Informe o segundo nùmero:\n");
     scanf("%i", &num2);
-    printf("Informe o terceiro n˙mero:\n");
+    printf("Informe o terceiro nùmero:\n");
     scanf("%i", &num3);
 
-    if(num2<num3)
+    if (num2 < num3)
     {
-        printf("%i N√O est· entre %i e %i? -> ", num1, num2, num3);
+        printf("%i NùO estù entre %i e %i? -> ", num1, num2, num3);
     }
-    else {
-        printf("%i N√O est· entre %i e %i? -> ", num1, num3, num2);
-
+    else
+    {
+        printf("%i NùO estù entre %i e %i? -> ", num1, num3, num2);
     }
 
     if (!(num1 > num2 && num1 < num3) && !(num1 > num3 && num1 < num2))
@@ -682,7 +683,7 @@ int ex512()
 
 int ex513()
 {
-    printf("Ler trÍs valores literais (caracteres) do teclado e dizer se o primeiro est· entre os outros dois\n\n");
+    printf("Ler trùs valores literais (caracteres) do teclado e dizer se o primeiro estù entre os outros dois\n\n");
     char caracter1, caracter2, caracter3, aux;
 
     printf("Informe o primeiro caracter:\n");
@@ -697,16 +698,15 @@ int ex513()
     scanf("%c", &aux);
     scanf("%c", &caracter3);
 
-    printf("\"%c\" est· entre \"%c\" e \"%c\"? -> ", caracter1, caracter2, caracter3);
+    printf("\"%c\" estù entre \"%c\" e \"%c\"? -> ", caracter1, caracter2, caracter3);
 
-    if (((int)caracter1 > (int)caracter2 && (int)caracter1 < (int)caracter3)
-        || ((int)caracter1 > (int)caracter3 && (int)caracter1 < (int)caracter2))
+    if (((int)caracter1 > (int)caracter2 && (int)caracter1 < (int)caracter3) || ((int)caracter1 > (int)caracter3 && (int)caracter1 < (int)caracter2))
     {
         printf("Sim");
     }
     else
     {
-        printf("N„o");
+        printf("Nùo");
     }
 
     return 0;
@@ -714,7 +714,7 @@ int ex513()
 
 int ex514()
 {
-    printf("Ler trÍs valores literais (caracteres) do teclado e dizer se est„o em ordem crescente lexicograficamente.\n\n");
+    printf("Ler trùs valores literais (caracteres) do teclado e dizer se estùo em ordem crescente lexicograficamente.\n\n");
 
     char caracter1, caracter2, caracter3, aux;
 
@@ -730,27 +730,25 @@ int ex514()
     scanf("%c", &aux);
     scanf("%c", &caracter3);
 
-    printf("\"%c\", \"%c\", e \"%c\" est„o em ordem crescente lexicograficamente? -> ", caracter1, caracter2, caracter3);
+    printf("\"%c\", \"%c\", e \"%c\" estùo em ordem crescente lexicograficamente? -> ", caracter1, caracter2, caracter3);
 
-    if ((int)tolower(caracter1) < (int)tolower(caracter2)
-        && (int)tolower(caracter2) < (int)tolower(caracter3))
+    if ((int)tolower(caracter1) < (int)tolower(caracter2) && (int)tolower(caracter2) < (int)tolower(caracter3))
     {
         printf("Sim");
     }
     else
     {
-        printf("N„o");
+        printf("Nùo");
     }
 
     return 0;
-
 
     return 0;
 }
 
 int ex515()
 {
-    printf("Ler um valor literal (caractere) do teclado e dizer se È uma letra mai˙scula.\n\n");
+    printf("Ler um valor literal (caractere) do teclado e dizer se ù uma letra maiùscula.\n\n");
 
     char caracter, aux;
 
@@ -758,15 +756,15 @@ int ex515()
     scanf("%c", &aux);
     scanf("%c", &caracter);
 
-    printf("%c È uma letra mai˙scula? -> ", caracter);
+    printf("%c ù uma letra maiùscula? -> ", caracter);
 
-    if((int)caracter >= 65 && (int)caracter <= 90)
+    if ((int)caracter >= 65 && (int)caracter <= 90)
     {
         printf("Sim\n");
     }
     else
     {
-        printf("N„o\n");
+        printf("Nùo\n");
     }
 
     return 0;
