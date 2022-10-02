@@ -251,6 +251,34 @@ int exercise06()
 {
     printf("6 - Ler uma string de no máximo 50 caracteres e mostrar quantas letras possui e quantos caracteres são números e quantos não são nem números nem letras.\n");
 
+    int i, countLetras = 0, countNum = 0, countOutros = 0;
+    char string[50];
+
+    printf("Informe uma string de no máximo 50 caracteres:\n");
+    fflush(stdin);
+    gets(string);
+
+    for (i = 0; i < strlen(string); i++)
+    {
+        if (((int)string[i] >= 65 && (int)string[i] <= 90) || ((int)string[i] >= 97 && (int)string[i] <= 122))
+        {
+            countLetras++;
+        }
+        else
+        {
+            if ((int)string[i] >= 48 && (int)string[i] <= 57)
+            {
+                countNum++;
+            }
+            else
+            {
+                countOutros++;
+            }
+        }
+    }
+
+    printf("A string possui:\n%i letras\n%i números\n%i outros tipos de caracteres\n", countLetras, countNum, countOutros);
+
     return 0;
 }
 
