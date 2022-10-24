@@ -8,7 +8,7 @@ int main()
   printf("Infome o número:\n");
   scanf("%i", &num);
   result = calcSoma(num);
-  printf("Soma dos valores de 1 até %i: %i", num, result);
+  printf("Soma dos valores de 1 até %i: %i\n", num, result);
   return 0;
 }
 
