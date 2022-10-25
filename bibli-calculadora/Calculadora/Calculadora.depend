@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1666658792 source:/home/milena/repos/exercicios-em-c/bibli-calculadora/Calculadora/biblioteca.c
+
+1666659044 source:/home/milena/repos/exercicios-em-c/bibli-calculadora/Calculadora/main.c
+	<stdio.h>
+	<stdlib.h>
+	"biblioteca.h"
+
+1666659201 /home/milena/repos/exercicios-em-c/bibli-calculadora/Calculadora/biblioteca.h
+
