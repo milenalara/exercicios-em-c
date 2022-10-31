@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1666911045 source:d:\repos\exercicios-em-c\recursiva-potencia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
