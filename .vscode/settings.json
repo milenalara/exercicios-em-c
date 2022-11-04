@@ -2,6 +2,10 @@
     "files.associations": {
         "string.h": "c",
         "locale.h": "c",
+<<<<<<< HEAD
         "stdlib.h": "c"
+=======
+        "stdio.h": "c"
+>>>>>>> 804a7adcfb7570f121c8935a4617617f808cf01c
     }
 }
