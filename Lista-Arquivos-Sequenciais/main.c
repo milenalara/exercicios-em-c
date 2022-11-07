@@ -10,6 +10,8 @@ void exercicioB();
 void exercicioC();
 void exercicioD();
 
+const int nTermos = 64;
+
 int main()
 {
   setlocale(LC_ALL, "Portuguese");
@@ -86,7 +88,7 @@ void exercicioA()
       n2 = n;
       n = n1 + n2;
       i++;
-    } while (i < 64);
+    } while (i < nTermos);
 
     fclose(fFib);
   }
@@ -124,7 +126,7 @@ void exercicioB()
         fprintf(fImpares, "%lli\n", n);
       }
       i++;
-    } while (i < 64);
+    } while (i < nTermos);
   }
 
   fclose(fFib);
@@ -139,67 +141,126 @@ void exercicioC()
 {
   // 3 - ler o arquivo do programa 1 e armazenar apenas os primos em um arquivo
   FILE *fFib, *fPrimos;
-  long long n, primos[64];
-  int k = 1;
-
   fFib = fopen("fFib.txt", "r");
   fPrimos = fopen("fPrimos.txt", "w");
+  int i = 0, divisores = 0;
+  long long n;
 
   if (fFib == NULL || fPrimos == NULL)
   {
-    printf("Erro de abertura\n");
+    printf("Error de abertura\n");
   }
   else
   {
-    long long n;
-    int d = 2, ehPrimo = 1;
+    do
+    {
+      fscanf(fFib, "%lli\n", &n);
 
-    fcanf(fFib, "%lli", &n);
+      for (int j = 2; j <= n / 2; j++)
+      {
+        if (n % j == 0)
+        {
+          divisores++;
+        }
+      }
 
+      if (divisores == 0)
+      {
+        fprintf(fPrimos, "%lli\n", n);
+      }
 
+      i++;
+    } while (i < nTermos);
   }
 
+  fclose(fFib);
+  fclose(fPrimos);
+
+  // FILE *fFib, *fPrimos;
+  // long long n, primos[nTermos];
+  // int linhas = 0;
+  // int i = 0, k = 0, ehPrimo = 0;
+
+  // fFib = fopen("fFib.txt", "r");
+  // fPrimos = fopen("fPrimos.txt", "w");
+
+  // fscanf(fFib, "%lli", &n);
   // if (fFib == NULL || fPrimos == NULL)
   // {
   //   printf("Error de abertura\n");
   // }
   // else
   // {
-  //   for (int i = 0; i < 64; i++)
+  //   do
   //   {
   //     fscanf(fFib, "%lli\n", &n);
 
-  //     for (int j = 0; j < 63; j++)
+  //     for (int j = 0; j < nTermos; j++)
   //     {
-  //       if (n % primos[j] == 0)
+  //       if (n < 2)
   //       {
   //         break;
   //       }
   //       else
   //       {
-  //         primos[k] = n;
-  //         k++;
+  //         if (n == 2)
+  //         {
+  //           primos[0] = 2;
+  //         }
+  //         else
+  //         {
+  //           if (n % primos[j] == 0)
+  //           {
+  //             primos[k] = n;
+  //             k++;
+  //           }
+  //         }
   //       }
+
+  //       i++;
   //     }
-  //   }
+  //   } while (i < nTermos);
   // }
 
-  // int m = 3;
-
-  // do
+  // for (int m = 0; m < nTermos; m++)
   // {
-  //   if (primos[m] != 0)
-  //   {
-  //     fprintf(fPrimos,"%lli\n", primos[m]);
-  //     m++;
-  //   }
-  // } while (m < 64);
+  //   printf("%lli\n", primos[m]);
+  // }
 
-  fclose(fFib);
-  fclose(fPrimos);
+  // fclose(fFib);
+  // fclose(fPrimos);
 }
 
 void exercicioD()
 {
   // 4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou não no arquivo gravado no programa 1. Caso não exista deverá mostrar o valor anterior e o posterior a esse valor.
+
+  FILE *fFib;
+  int i = 0;
+  long long n, valor = 0;
+
+  fFib = fopen("fFib.txt", "r");
+
+  if (fFib == NULL)
+  {
+    printf("Error de abertura\n");
+  }
+  else
+  {
+    do
+    {
+      printf("Informe um valor ou digite -1 para encerrar");
+      scanf("%lli", &valor);
+
+      do
+      {
+        fprintf(fFib, "%lli\n", n);
+        i++;
+
+      } while (i < nTermos);
+
+
+    } while (valor != -1);
+  }
+  fclose(fFib);
 }
