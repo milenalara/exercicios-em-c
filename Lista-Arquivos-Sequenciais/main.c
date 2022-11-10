@@ -20,8 +20,8 @@ int main()
   do
   {
     printf("\n============================================== BOAS VINDAS =============================================\n\n");
-    printf("Digite o código do programa que deseja executar\n");
-    printf("OU digite 0 para ver as opçõees de programas\n");
+    printf("Digite o cï¿½digo do programa que deseja executar\n");
+    printf("OU digite 0 para ver as opï¿½ï¿½ees de programas\n");
     printf("OU digite -1 para encerrar\n");
     scanf("%i", &op);
 
@@ -36,10 +36,10 @@ int main()
 
 void options()
 {
-  printf("1 - gravar em um arquivo os 64 primeiros valores da série de Fibonacci");
+  printf("1 - gravar em um arquivo os 64 primeiros valores da sï¿½rie de Fibonacci");
   printf("2 - ler o arquivo do programa 1 e armazenar os valores pares em um arquivo e os impares em outro arquivo");
   printf("3 - ler o arquivo do programa 1 e armazenar apenas os primos em um arquivo");
-  printf("4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou não no arquivo gravado no programa 1. Caso não exista deverá mostrar o valor anterior e o posterior a esse valor.");
+  printf("4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou nï¿½o no arquivo gravado no programa 1. Caso nï¿½o exista deverï¿½ mostrar o valor anterior e o posterior a esse valor.");
 }
 
 void chooseProgram(int op)
@@ -61,14 +61,14 @@ void chooseProgram(int op)
     exercicioD();
     break;
   default:
-    printf("Programa não encontrado");
+    printf("Programa nï¿½o encontrado");
     break;
   }
 }
 
 void exercicioA()
 {
-  // 1 - gravar em um arquivo os 64 primeiros valores da série de Fibonacci
+  // 1 - gravar em um arquivo os 64 primeiros valores da sï¿½rie de Fibonacci
   FILE *fFib;
   long long n1 = 0, n2 = 0, n = 1;
   int i = 0;
@@ -233,7 +233,7 @@ void exercicioC()
 
 void exercicioD()
 {
-  // 4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou não no arquivo gravado no programa 1. Caso não exista deverá mostrar o valor anterior e o posterior a esse valor.
+  // 4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou nï¿½o no arquivo gravado no programa 1. Caso nï¿½o exista deverï¿½ mostrar o valor anterior e o posterior a esse valor.
 
   FILE *fFib;
   int i = 0;
@@ -255,10 +255,13 @@ void exercicioD()
       do
       {
         fprintf(fFib, "%lli\n", n);
+        if (valor == n)
+        {
+          printf("%lli\n", n);
+        }
+
         i++;
-
       } while (i < nTermos);
-
 
     } while (valor != -1);
   }
