@@ -10,7 +10,7 @@ void exercicioB();
 void exercicioC();
 void exercicioD();
 
-const int nTermos = 12;
+const int nTermos = 64;
 
 int main()
 {
@@ -143,7 +143,7 @@ void exercicioC()
   FILE *fFib, *fPrimos;
   fFib = fopen("fFib.txt", "r");
   fPrimos = fopen("fPrimos.txt", "w");
-  int i = 0, divisores = 0;
+  int i = 0, primos[nTermos];
   long long n;
 
   if (fFib == NULL || fPrimos == NULL)
@@ -155,6 +155,7 @@ void exercicioC()
     do
     {
       fscanf(fFib, "%lli\n", &n);
+      int divisores = 0;
 
       for (int j = 2; j <= n / 2; j++)
       {
@@ -172,6 +173,39 @@ void exercicioC()
       i++;
     } while (i <= nTermos);
   }
+
+  // FILE *fFib, *fPrimos;
+  // fFib = fopen("fFib.txt", "r");
+  // fPrimos = fopen("fPrimos.txt", "w");
+  // int i = 0, divisores = 0;
+  // long long n;
+
+  // if (fFib == NULL || fPrimos == NULL)
+  // {
+  //   printf("Error de abertura\n");
+  // }
+  // else
+  // {
+  //   do
+  //   {
+  //     fscanf(fFib, "%lli\n", &n);
+
+  //     for (int j = 2; j <= n / 2; j++)
+  //     {
+  //       if (n % j == 0)
+  //       {
+  //         divisores++;
+  //       }
+  //     }
+
+  //     if (divisores == 0)
+  //     {
+  //       fprintf(fPrimos, "%lli\n", n);
+  //     }
+
+  //     i++;
+  //   } while (i <= nTermos);
+  // }
 
   fclose(fFib);
   fclose(fPrimos);
