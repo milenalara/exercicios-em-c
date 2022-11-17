@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// soma() agora é uma função, porque retorna valor
+void preencheVet(int v[10]);
 
 int main()
 {
   setlocale(LC_ALL, "Portuguese");
-  srand(time(NULL)); // para os números serem sorteados diferentes toda vez
+  srand(time(NULL)); // para os nï¿½meros serem sorteados diferentes toda vez
   int i, vet[10];
 
   preencheVet(vet);
@@ -20,14 +20,14 @@ int main()
   return 0;
 }
 
-void preencheVet(int v[10]) // vetores SEMPRE são passados por referência, por isso dispensa o uso do * na definição do método e do & na chamada
+void preencheVet(int v[10]) // vetores SEMPRE sï¿½o passados por referï¿½ncia, por isso dispensa o uso do * na definiï¿½ï¿½o do mï¿½todo e do & na chamada
 {
   int i;
 
   for (i = 0; i < 10; i++)
   {
-    v[i] = rand() % (15 - 10 + 1) + 10; // vai gerar números entre 10 e 15
+    v[i] = rand() % (15 - 10 + 1) + 10; // vai gerar nï¿½meros entre 10 e 15
   }
 
-  return; // procedimentos podem ter um return que não retorna nenhum valor no final
+  return; // procedimentos podem ter um return que nï¿½o retorna nenhum valor no final
 }
