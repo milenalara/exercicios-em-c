@@ -6,7 +6,7 @@ void leVetor(int *v, int tam);
 void imprimeVet(int *v, int tam, char *nomeVet);
 int calcSoma(int num);
 
-// 1 - Elaborar um programa que leia um vetor A com 15 elementos inteiros. Construir um vetor B do mesmo tipo, em que cada elemento de B deva ser o resultado do somatório de 1 até o valor correspondente de cada elemento do vetor A. Apresentar A e B.
+// 2 - Construir um programa que leia dois vetores A e B com 10 elementos quaisquer inteiros. Construir um vetor C, sendo este o resultado da união dos elementos de A e B – sem repetição. Apresentar C.
 
 int main()
 {
@@ -31,7 +31,7 @@ void leVetor(int *v, int tam)
 {
     for (int i = 0; i < tam; i++)
     {
-        printf("Informe o %iº número:\n", i + 1);
+        printf("Informe o %iï¿½ nï¿½mero:\n", i + 1);
         scanf("%i", &v[i]);
     }
 }

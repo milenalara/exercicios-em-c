@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1668715572 source:d:\repos\exercicios-em-c\_materia-segunda-prova\03-bibliotecas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"calculadora.h"
+
+1668715304 d:\repos\exercicios-em-c\_materia-segunda-prova\03-bibliotecas\calculadora.h
+

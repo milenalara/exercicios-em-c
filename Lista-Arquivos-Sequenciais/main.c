@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <string.h>
+#include <math.h>
 
 void options();
 void chooseProgram(int op);
@@ -28,8 +29,6 @@ int main()
     chooseProgram(op);
 
   } while (op != -1);
-
-  return 0;
 
   return 0;
 }
@@ -140,10 +139,11 @@ void exercicioB()
 void exercicioC()
 {
   // 3 - ler o arquivo do programa 1 e armazenar apenas os primos em um arquivo
+
   FILE *fFib, *fPrimos;
   fFib = fopen("fFib.txt", "r");
   fPrimos = fopen("fPrimos.txt", "w");
-  int i = 0, primos[nTermos];
+  int i = 0;
   long long n;
 
   if (fFib == NULL || fPrimos == NULL)
@@ -155,17 +155,21 @@ void exercicioC()
     do
     {
       fscanf(fFib, "%lli\n", &n);
+      printf("n = %lli\n", n);
       int divisores = 0;
+      long long j, fim;
 
-      for (int j = 2; j <= n / 2; j++)
+      fim = sqrt(n);
+      for (j = 2; j <= fim; j++)
       {
         if (n % j == 0)
         {
           divisores++;
+          break;
         }
       }
 
-      if (divisores == 0)
+      if (divisores == 0 && n >= 2)
       {
         fprintf(fPrimos, "%lli\n", n);
       }
@@ -173,39 +177,6 @@ void exercicioC()
       i++;
     } while (i <= nTermos);
   }
-
-  // FILE *fFib, *fPrimos;
-  // fFib = fopen("fFib.txt", "r");
-  // fPrimos = fopen("fPrimos.txt", "w");
-  // int i = 0, divisores = 0;
-  // long long n;
-
-  // if (fFib == NULL || fPrimos == NULL)
-  // {
-  //   printf("Error de abertura\n");
-  // }
-  // else
-  // {
-  //   do
-  //   {
-  //     fscanf(fFib, "%lli\n", &n);
-
-  //     for (int j = 2; j <= n / 2; j++)
-  //     {
-  //       if (n % j == 0)
-  //       {
-  //         divisores++;
-  //       }
-  //     }
-
-  //     if (divisores == 0)
-  //     {
-  //       fprintf(fPrimos, "%lli\n", n);
-  //     }
-
-  //     i++;
-  //   } while (i <= nTermos);
-  // }
 
   fclose(fFib);
   fclose(fPrimos);
@@ -215,12 +186,13 @@ void exercicioD()
 {
   // 4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou não no arquivo gravado no programa 1. Caso não exista deverá mostrar o valor anterior e o posterior a esse valor.
 
-  FILE *fFib;
+  FILE *fFib, *fIncluidos;
   long long n, valor = 0;
 
   fFib = fopen("fFib.txt", "r");
+  fIncluidos = fopen("incluidos.txt", "w");
 
-  if (fFib == NULL)
+  if (fFib == NULL || fIncluidos == NULL)
   {
     printf("Error de abertura\n");
   }
@@ -228,51 +200,20 @@ void exercicioD()
   {
     do
     {
-      printf("Informe um valor ou digite -1 para encerrar");
+      printf("Informe um valor ou digite -1 para encerrar:\n");
       scanf("%lli", &valor);
 
       for (int i = 0; i <= nTermos; i++)
       {
-        fprintf(fFib, "%lli\n", n);
+        fscanf(fFib, "%lli\n", &n);
         if (valor == n)
         {
           printf("%lli\n", n);
+          fprintf(fIncluidos, "%lli\n", n);
         }
       }
     } while (valor != -1);
   }
 
   fclose(fFib);
-
-  // FILE *fFib;
-  // int i = 0;
-  // long long n, valor = 0;
-
-  // fFib = fopen("fFib.txt", "r");
-
-  // if (fFib == NULL)
-  // {
-  //   printf("Error de abertura\n");
-  // }
-  // else
-  // {
-  //   do
-  //   {
-  //     printf("Informe um valor ou digite -1 para encerrar");
-  //     scanf("%lli", &valor);
-
-  //     do
-  //     {
-  //       fprintf(fFib, "%lli\n", n);
-  //       if (valor == n)
-  //       {
-  //         printf("%lli\n", n);
-  //       }
-
-  //       i++;
-  //     } while (i < nTermos);
-
-  //   } while (valor != -1);
-  // }
-  // fclose(fFib);
 }
