@@ -25,7 +25,7 @@ void preencheMat(int mat[10][10], int valorInicial, int valorFinal)
     for (j = 0; j < 10; j++)
     {
       mat[i][j] = rand() % (valorFinal - valorInicial + 1) + valorInicial;
-      printf("%2i - ", m[i][j]);
+      printf("%2i - ", mat[i][j]);
     }
     printf("\n");
   }
