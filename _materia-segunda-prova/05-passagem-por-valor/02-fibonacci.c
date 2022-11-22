@@ -15,6 +15,8 @@ int main()
   scanf("%i", &num);
   somaFib(num);
   printf("%lli\n", fib);
+
+  return 0;
 }
 
 void somaFib(int num)

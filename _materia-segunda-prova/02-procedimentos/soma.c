@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// Crie um procedimento que solicite a entrada de um valor nume?rico (inteiro e positivo) e imprima o valor do somatório do número 1 ate? esse valor. Crie um programa principal que chame esse procedimento
+
 void soma();
 
 int main()

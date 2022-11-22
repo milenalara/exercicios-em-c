@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// Crie um procedimento que receba um conjunto de valores e devolva na variável global média, o valor da média do conjunto lido.
+
 void calcMedia();
 
 int n;

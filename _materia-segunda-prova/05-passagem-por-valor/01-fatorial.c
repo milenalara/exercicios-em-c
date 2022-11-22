@@ -17,6 +17,8 @@ int main()
   scanf("%i", &num);
   calcFat(num);
   imprimeResult(num);
+
+  return 0;
 }
 
 void imprimeResult(int num)

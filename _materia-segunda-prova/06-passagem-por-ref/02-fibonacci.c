@@ -17,6 +17,8 @@ int main()
 
   somaFibonacci(num, &fib);
   printResult(num, fib);
+
+  return 0;
 }
 
 void printResult(int num, long long result)

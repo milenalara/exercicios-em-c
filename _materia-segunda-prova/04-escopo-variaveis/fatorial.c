@@ -2,28 +2,34 @@
 #include <stdlib.h>
 #include <locale.h>
 
-void calcMedia();
+// Crie um procedimento que receba um  um valor passado como variável global(N) e devolva em outra  variável global (Fat) o fatorial do numero, o programa principal deverá ler o valor de N e imprimir a variável Fat
 
-int n, media = 1;
+void leNum();
+void calcFat();
+
+int n, fat = 1;
 
 int main()
 {
   setlocale(LC_ALL, "Portuguese");
 
-  media();
+  leNum();
+  calcFat();
+  printf("%i! = %i", n, fat);
 
   return 0;
 }
 
-void calcMedia()
+void leNum()
 {
   printf("Informe o número:\n");
   scanf("%i", &n);
+}
 
+void calcFat()
+{
   for (int i = 0; i < n; i++)
   {
-    calcMedia += calcMedia * i;
+    fat += fat * i;
   }
-
-  printf("%i! = %i", n, calcMedia);
 }

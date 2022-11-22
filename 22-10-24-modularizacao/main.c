@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-int calcSoma(int num);
+int calcPow(int num);
 
 int main()
 {
   int num, result;
   printf("Infome o número:\n");
   scanf("%i", &num);
-  result = calcSoma(num);
+  result = calcPow(num);
   printf("Soma dos valores de 1 até %i: %i\n", num, result);
   return 0;
 }
 
-int calcSoma(int num)
+int calcPow(int num)
 {
   int soma = 0;
   for (int i = 0; i <= num; i++)

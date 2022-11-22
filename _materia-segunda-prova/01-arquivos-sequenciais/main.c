@@ -19,8 +19,8 @@ int main()
 	do
 	{
 		printf("\n--------------- MENU PRINCIPAL ---------------\n\n");
-		printf("Digite o cï¿½digo do programa que deseja executar\n");
-		printf("OU digite 0 para ver as opï¿½ï¿½es de programas\n");
+		printf("Digite o código do programa que deseja executar\n");
+		printf("OU digite 0 para ver as opções de programas\n");
 		printf("OU digite -1 para encerrar\n");
 		scanf("%i", &op);
 
@@ -33,10 +33,10 @@ int main()
 
 void options()
 {
-	printf("1 - gravar em um arquivo os 64 primeiros valores da sï¿½rie: 1 1 2 3 5 8 13 21 34 . . .");
+	printf("1 - gravar em um arquivo os 64 primeiros valores da série: 1 1 2 3 5 8 13 21 34 . . .");
 	printf("2 - ler o arquivo letra a e armazenar os valores pares em um arquivo e os impares em outro arquivo");
 	printf("3 - ler o arquivo letra a e armazenar apenas os primos em um arquivo");
-	printf("4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou nï¿½o no arquivo gravado na letra a. Caso nï¿½o exista deverï¿½ mostrar o valor anterior e o posterior a esse valor.");
+	printf("4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou não no arquivo gravado na letra a. Caso não exista deverá mostrar o valor anterior e o posterior a esse valor.");
 }
 
 void chooseProgram(int op)
@@ -61,12 +61,12 @@ void chooseProgram(int op)
 		divide();
 		break;
 	default:
-		printf("Programa nï¿½o encontrado");
+		printf("Programa não encontrado");
 		break;
 	}
 }
 
-// 1 - gravar em um arquivo os 64 primeiros valores da sï¿½rie: 1 1 2 3 5 8 13 21 34 . . .
+// 1 - gravar em um arquivo os 64 primeiros valores da série: 1 1 2 3 5 8 13 21 34 . . .
 void soma()
 {
 	FILE *fibonacci;
@@ -176,5 +176,5 @@ void multiplica()
 
 void divide()
 {
-	printf("4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou nï¿½o no arquivo gravado na letra a. Caso nï¿½o exista deverï¿½ mostrar o valor anterior e o posterior a esse valor.");
+	printf("4 - leia um conjunto de valores (flag -1) e verifique para cada valor se ele se encontra ou não no arquivo gravado na letra a. Caso não exista deverá mostrar o valor anterior e o posterior a esse valor.");
 }

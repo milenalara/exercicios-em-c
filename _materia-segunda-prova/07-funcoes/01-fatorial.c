@@ -2,20 +2,19 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// 1 - Elabore um procedimento para calcular o Fatorial de um numero passado por parametro. A resposta devera ser retornada em uma varavel passada por referencia. Faça também um programa principal que chame esse procedimento.
-
-void calcFat(int num, int *fat);
+// 1 - Elabore uma função para calcular e retornar o Fatorial de um número passado por parâmetro. Faça também um programa principal que chame essa função.
+int calcFat(int num);
 void impResult(int num, int result);
 
 int main()
 {
   setlocale(LC_ALL, "Portuguese");
-  int num, fat = 1;
+  int num, fat = 0;
 
   printf("Informe o número:\n");
   scanf("%i", &num);
 
-  calcFat(num, &fat);
+  fat = calcFat(num);
   impResult(num, fat);
 
   return 0;
@@ -26,10 +25,12 @@ void impResult(int num, int result)
   printf("%i! = %i\n", num, result);
 }
 
-void calcFat(int num, int *fat)
+int calcFat(int num)
 {
+  int fat = 1;
   for (int i = 1; i <= num; i++)
   {
-    *fat = *fat * i;
+    fat = fat * i;
   }
+  return fat;
 }
